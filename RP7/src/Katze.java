@@ -1,4 +1,4 @@
-public class Katze extends Saugetiere{
+public class Katze extends Saeugetier{
     public void gibLaut() {
         System.out.println(this.getClass().getName() + " : miauen - aus Klasse Katze");
     }

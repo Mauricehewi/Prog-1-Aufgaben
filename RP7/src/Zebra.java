@@ -1,4 +1,4 @@
-public class Zebra extends Saugetiere{
+public class Zebra extends Saeugetier{
     public void gibLaut() {
         System.out.println(this.getClass().getName() + " : wiehern - aus Klasse Zebra");
     }

@@ -13,4 +13,3 @@ public class GetAbstammungDemo {
             System.out.println(luchs.getAbstammung());
         }
     }
-}
