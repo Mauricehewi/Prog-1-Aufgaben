@@ -1,9 +1,9 @@
 public class Guadschai {
-    final double rabatt;
+    public final double rabatt;
     boolean eingeloest;
 
     public Guadschai(){
-        this.rabatt = Math.round(Math.random());
+        this.rabatt = MirZaehlad.runden(Math.random()/10, 2);
         this.eingeloest = false;
 
     }
@@ -11,8 +11,10 @@ public class Guadschai {
         return this.rabatt;
     }
 
-    public void einloesen(){
-        this.rabatt = false;
+    public void einloesen(Mauldascha mauldascha){
+        if( !(this.eingeloest))
+        mauldascha.reduzieren(this);
+        this.eingeloest = true;
     }
 
 

@@ -1,7 +1,7 @@
 public class Kaesspaetzle extends Veschbr{
 
-    Kaesspaetzle(double d){
-        super(d ,  "Kaesspaetzle");
+    Kaesspaetzle(double preis, String name){
+        super(preis, name);
 
     }
 }

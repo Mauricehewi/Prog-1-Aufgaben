@@ -1,17 +1,21 @@
 public class Mauldascha extends Veschbr implements DesKoMerGinstigerMacha {
     private boolean isReduziert;
 
-    public Mauldascha(){
+    public Mauldascha(String name, double preis) {
+        super(preis, name);
+        isReduziert = false;
     }
-    public void reduzieren(Guadschai guadschai){
-        if (this.isReduziert == false) {
-            this.setPreis(this.getPreis() * (1 - guadschai.rabatt));
+
+    public void reduzieren(Guadschai guadschai) {
+        if (!(this.isReduziert)) {
+            this.setPreis(this.getPreis() * (1 - guadschai.getRabatt()));
             this.isReduziert = true;
         }
     }
-@Override
+
+    @Override
     public String toString() {
-    return "Name: " + this.getName() + ", Preis: " + this.getPreis() + ", bereits reduziert: " + this.isReduziert;
+        return "Name: " + this.getName() + ", Preis: " + this.getPreis() + ", bereits reduziert: " + this.isReduziert;
     }
 
 }
